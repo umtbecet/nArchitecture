@@ -27,9 +27,9 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
         [HttpGet("{Id}")]
-        public async Task<IActionResult> GetById([FromRoute] GetByIdBrandQuery getByIdBrandQuery)
+        public async Task<IActionResult> GetById([FromRoute] GetByIdBrandQuery getByIdIdBrandQuery)
         {
-            BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdBrandQuery);
+            BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdIdBrandQuery);
             return Ok(brandGetByIdDto);
         }
     }

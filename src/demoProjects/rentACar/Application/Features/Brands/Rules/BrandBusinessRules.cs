@@ -28,5 +28,7 @@ namespace Application.Features.Brands.Rules
         {
             if (brand == null) throw new BusinessException("Requested brand does not exist.");
         }
+
+
     }
 }
